@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Database</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #aaa;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        .box h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .box p {
+            font-size: 16px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .view {
+            background-color: #f5f5f5;
+            color: black;
+        }
+
+        .add {
+            background-color: #f5f5f5;
+            color: black;
+        }
+
+        .view:hover {
+            background-color: #3e8e41;
+        }
+
+        .add:hover {
+            background-color: #3e8e41;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product Database</h1>
+    <div class="container">
+        <div class="box view">
+            <h2>View Database Table</h2>
+            <p>View the current database table of products.</p>
+        </div>
+        <div class="box add">
+            <h2> <a href="C:\Users\aaaa\Desktop\PROJECT\product_form.html">Add New Product</a> </h2>
+            <p>Add a new product to the database table.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

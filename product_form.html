@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT FORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 500px;
+            margin-right: 10px;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            display: block;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="radio"] {
+            margin-right: 0.4rem;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TO ENTER A NEW PRODUCT</h1>
+    <form action="C:\Users\aaaa\Desktop\PROJECT\Product_form_submit.html">
+        <p>
+            <label for="id">PRODUCT_ID : </label>
+
+            <input id="id" type="text" required>
+
+        </p>
+        <p>
+            SELECT A PRODUCT CATEGORY :
+        <div>
+            <input id="jeans" type="radio" name="category">
+            <label for="jeans"> JEANS </label>
+
+        </div>
+        <div>
+            <input id="tops" type="radio" name="category">
+            <label for="tops"> TOPS </label>
+
+        </div>
+        <div>
+            <input id="tshirt" type="radio" name="category">
+            <label for="tshirt"> TSHIRT</label>
+
+        </div>
+        <div>
+            <input id="shirt" type="radio" name="category">
+            <label for="shirt"> SHIRT</label>
+
+        </div>
+        </p>
+        <p>
+            <label for="type">PRODUCT TYPE</label>
+            <input id="type" type="text" placeholder="Enter product type" required>
+
+        </p>
+        <p>
+            <label for="brand">PRODUCT BRAND</label>
+            <input type="text" name="brand" id="brand" placeholder="Enter product brand" required>
+
+        </p>
+        <p>
+
+            <label for="color">PRODUCT COLOR</label>
+            <input type="text" name="color" placeholder="Enter product color" id="color" required>
+        </p>
+        <p>
+
+            SELECT PRODUCT SIZE :
+        <div>
+            <input id='xs' type="radio" name="size">
+            <label for="xs">XS</label>
+
+        </div>
+        <div>
+            <input id='s' type="radio" name="size">
+            <label for="s">S</label>
+
+        </div>
+        <div>
+            <input id='m' type="radio" name="size">
+            <label for="m">M</label>
+
+        </div>
+        <div>
+            <input id='L' type="radio" name="size">
+            <label for="L">L</label>
+
+        </div>
+        <div>
+            <input id='xl' type="radio" name="size">
+            <label for="xl">XL</label>
+
+        </div>
+        </p>
+        <p>
+            SELECT GENDER :
+        <div>
+            <input id='female' type="radio" name="gender">
+            <label for="female"> FEMALE</label>
+
+        </div>
+        <div>
+            <input id='male' type="radio" name="gender">
+            <label for="male"> MALE</label>
+
+        </div>
+        <div>
+            <input id='other' type="radio" name="gender">
+            <label for="other"> OTHERS</label>
+
+        </div>
+        </p>
+        <p>
+
+            <label for="cost">COST PRICE</label>
+            <input type="number" name="cost" id="cost" required>
+        </p>
+        <p>
+            <label for="selling">SELLING PRICE</label>
+            <input type="number" name="selling" id="selling" required>
+
+
+        </p>
+        <p>
+            <label for="qty">QUANTITY</label>
+            <input type="number" name="qty" id="qty" required>
+
+
+        </p>
+
+        <button>SUBMIT</button>
+    </form>
+</body>
+
+</html>
