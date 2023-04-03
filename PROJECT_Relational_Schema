@@ -1,0 +1,7 @@
+admin	     - (admin_id,name,admin_no,dept_id*)
+customer   -(cust_id,cust_name,cust_add,cust_phone,cust_email)
+payment    - (pay_id, pay_amt,pay_mode,pay_date,cust_id*,prod_id*)
+product	   - (prod_id,prod_type,prod_category,cost_price,selling_price,prod_gender,prod_size,prod_brand,qty,sup_id*)
+supplier   - (sup_id,sup_name,sup_phn,sup_add)
+staff	     - (staff_id,staff_name,staff_phn,dept_id*)
+department - (dept_id,dept_name)
